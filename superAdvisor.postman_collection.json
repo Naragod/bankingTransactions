@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "4ed37ca0-8cbd-4112-b457-7db470151349",
+		"name": "Examples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SuperAdvisor",
+			"item": [
+				{
+					"name": "balance - GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:1234/balance?date=2022-09-09T00:00:00&customer=Mateo",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"balance"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2022-09-09T00:00:00"
+								},
+								{
+									"key": "customer",
+									"value": "Mateo"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transfer - POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"sender\": \"Mateo\",\n    \"receiver\": \"Lukas\",\n    \"amount\": 20\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1234/transfer",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"transfer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveSnapshot - POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"customer\":\"Mateo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:1234/saveSnapshot",
+							"host": [
+								"localhost"
+							],
+							"port": "1234",
+							"path": [
+								"saveSnapshot"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

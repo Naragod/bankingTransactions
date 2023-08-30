@@ -1,0 +1,6 @@
+{
+    "username":"superadvisor",
+    "password":"coolPassword123",
+    "database": "superAdvisor",
+    "collection": "Transactions"
+}
